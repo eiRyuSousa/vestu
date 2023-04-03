@@ -1,0 +1,103 @@
+:root {
+    --cor-principal: #D9D9D0;
+    --cor-preto: black;
+    --cor-branco: white;
+    --texto-padão: Josefin Slab;
+    --texto-geral: Actor;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#titulo2{
+    position: relative; /* define a posição relativa para que os pseudo-elementos sejam posicionados corretamente */
+    text-align: center; /* centraliza o texto do título */
+    font-size: 70px; /* ajuste a fonte e o tamanho do título conforme necessário */
+    font-weight: bold;
+}
+
+#titulo2::before,
+#titulo2::after {
+  content: ""; /* define o conteúdo dos pseudo-elementos como vazio */
+  position: absolute; /* define a posição absoluta para que as linhas fiquem nos lados do título */
+  top: 60%; /* posiciona as linhas no centro verticalmente */
+  width: 200px; /* ajuste a largura das linhas conforme necessário */
+  height: 1px; /* ajuste a altura das linhas conforme necessário */
+  background-color: black; /* define a cor das linhas */
+}
+
+#titulo2::before {
+    left: 105%; /* posiciona a linha esquerda */
+  }
+  
+#titulo2:after {
+    right: 105%; /* posiciona a linha direita */
+  }
+
+
+#topo {
+    background-color: var(--cor-preto);
+}
+
+#topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#corpo h2{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-style: italic;
+    font-size: 35px;
+}
+
+#corpo a {
+    display: flex;
+    margin-top: 1vw;
+    cursor: pointer;
+    color: black;
+    margin: 30px;
+}
+
+#corpo .preco {
+   display: flex;
+   background-color: var(--cor-principal);
+   padding: 20px;
+   border-radius: 20px;
+   margin: 70px;
+   justify-content: space-around;
+}
+
+.preco h3{
+    padding: 30px;
+    font-family: 'Josefin Slab';
+
+}
+
+.roupa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+}
+
+button{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
